@@ -1,7 +1,17 @@
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
+import SidebarDots from "@/components/SidebarDots";
+
 export default function Home() {
   return (
-    <div className="grid items-center justify-items-center min-h-screen">
-      <main className="flex flex-col">home</main>
-    </div>
+    <main className="relative">
+      <SidebarDots />
+      <Hero id="hero" />
+      <About id="about" />
+      <Projects id="projects" />
+      <Contact id="contact" />
+    </main>
   );
 }
