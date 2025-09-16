@@ -3,7 +3,7 @@ import Section from "../Section";
 export default function Hero({ id }) {
   return (
     <Section id={id}>
-      <div className="flex flex-col items-start justify-center px-8">
+      <div className="flex flex-col px-8">
         <p className="uppercase text-sm tracking-widest text-gray-400 mb-2">
           Portfolio / 2025
         </p>
