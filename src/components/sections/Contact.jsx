@@ -1,10 +1,50 @@
 import Section from "../Section";
+import { ArrowRight } from "lucide-react";
 
 export default function Contact({ id }) {
   return (
     <Section id={id}>
-      <div className="text-center space-y-4">
-        <h2 className="text-4xl font-bold">Contact</h2>
+      <div className="max-w-6xl mx-auto flex gap-16">
+        <div>
+          <h2 className="text-4xl font-bold mb-6">Let's Connect</h2>
+          <p className="text-gray-400 mb-8 max-w-md">
+            Always open to new opportunities, collaborations, and conversations
+            about development and technology.
+          </p>
+
+          <a
+            href=""
+            className="flex items-center gap-2 text-lg font-semibold hover:text-gray-400"
+          >
+            rinesaahmedi03@gmail.com <ArrowRight size={18} />
+          </a>
+          <p className="mt-4 text-gray-400">+383 43 736 361</p>
+        </div>
+
+        <div>
+          <h3 className="uppercase text-sm tracking-widest text-gray-400 mb-6">
+            Elsewhere
+          </h3>
+          <div className="flex gap-4">
+            <a
+              href="https://github.com/rinesaahmedi"
+              target="_blank"
+              className="p-4 border border-gray-800 rounded-lg hover:border-gray-400"
+            >
+              <p className="font-semibold">GitHub</p>
+              <p className="text-gray-400">@rinesaahmedi</p>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/rinesaahmedi"
+              target="_blank"
+              className="p-4 border border-gray-800 rounded-lg hover:border-gray-400"
+            >
+              <p className="font-semibold">LinkedIn</p>
+              <p className="text-gray-400">rinesaahmedi</p>
+            </a>
+          </div>
+        </div>
       </div>
     </Section>
   );
