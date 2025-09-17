@@ -33,6 +33,7 @@ const thoughts = [
       "I believe being kind and helpful is as important as technical skills. I like supporting others, solving problems together, and making projects smoother through teamwork and communication.",
   },
 ];
+
 export default function About({ id }) {
   const [expanded, setExpanded] = useState({});
 
@@ -48,22 +49,21 @@ export default function About({ id }) {
           {thoughts.map((thought, index) => (
             <div
               key={index}
-              className="border border-gray-800 rounded-xl p-6 hover:border-gray-600 transition"
+              className="group border-2 border-gray-600 dark:border-gray-300 rounded-xl p-6 hover:border-black dark:hover:border-white transition"
             >
-              <div className="flex justify-between text-sm text-gray-400 mb-3">
+              <div className="flex justify-between text-sm text-gray-700 dark:text-gray-300 mb-3">
                 <span>{thought.date}</span>
                 <span>{thought.time}</span>
               </div>
-<<<<<<< Updated upstream
               <h3 className="text-xl font-semibold mb-2">{thought.title}</h3>
               <p className="text-gray-400 mb-4">{thought.description}</p>
               <a
                 href={thought.link}
-                className="text-sm font-medium hover:underline"
+                className="text-sm font-medium text-white flex items-center gap-1 group-hover:gap-2 transition-all"
               >
                 Read more →
               </a>
-=======
+              =======
               <h3 className="text-xl font-medium mb-2 group-hover:text-gray-700 dark:group-hover:text-gray-300  transition-colors">
                 {thought.title}
               </h3>
@@ -81,7 +81,6 @@ export default function About({ id }) {
                   →
                 </span>
               </button>
->>>>>>> Stashed changes
             </div>
           ))}
         </div>
