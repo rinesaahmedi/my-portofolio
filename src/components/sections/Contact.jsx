@@ -16,9 +16,9 @@ export default function Contact({ id }) {
               href=""
               className="flex items-center gap-2 text-lg font-semibold hover:text-gray-400"
             >
-              rinesaahmedi03@gmail.com <ArrowRight size={18} />{" "}
+              rinesaahmedi03@gmail.com <ArrowRight size={18} />
             </a>
-            <p className="mt-4 text-gray-400">+383 43 736 361</p>{" "}
+            <p className="mt-4 text-gray-400">+383 43 736 361</p>
           </div>
           <div>
             <h3 className="uppercase text-sm tracking-widest text-gray-400 mb-6">
@@ -30,16 +30,16 @@ export default function Contact({ id }) {
                 target="_blank"
                 className="p-4 border border-gray-800 rounded-lg hover:border-gray-400 pr-10"
               >
-                <p className="font-semibold">GitHub</p>{" "}
-                <p className="text-gray-400">@rinesaahmedi</p>{" "}
+                <p className="font-semibold">GitHub</p>
+                <p className="text-gray-400">@rinesaahmedi</p>
               </a>
               <a
                 href="https://www.linkedin.com/in/rinesaahmedi"
                 target="_blank"
                 className="p-4 border border-gray-800 rounded-lg hover:border-gray-400 pr-10"
               >
-                <p className="font-semibold">LinkedIn</p>{" "}
-                <p className="text-gray-400">rinesaahmedi</p>{" "}
+                <p className="font-semibold">LinkedIn</p>
+                <p className="text-gray-400">rinesaahmedi</p>
               </a>
             </div>
           </div>

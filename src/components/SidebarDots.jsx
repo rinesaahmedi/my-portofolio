@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const sections = ["hero", "about", "projects", "contact"];
+const sections = ["hero", "projects", "about", "contact"];
 
 export default function SidebarDots() {
   const [active, setActive] = useState("hero");

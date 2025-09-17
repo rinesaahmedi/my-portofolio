@@ -53,9 +53,7 @@ export default function Projects({ id }) {
               </div>
               <div className="flex justify-end min-w-xs gap-4 text-gray-500">
                 {work.tech.map((tech, i) => (
-                  <span key={i} className="">
-                    {tech}
-                  </span>
+                  <span key={i}>{tech}</span>
                 ))}
               </div>
             </div>
