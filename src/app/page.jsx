@@ -9,8 +9,8 @@ export default function Home() {
     <main className="relative">
       <SidebarDots />
       <Hero id="hero" />
-      <About id="about" />
       <Projects id="projects" />
+      <About id="about" />
       <Contact id="contact" />
     </main>
   );

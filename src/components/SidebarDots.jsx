@@ -30,7 +30,7 @@ export default function SidebarDots() {
         <a
           key={id}
           href={`#${id}`}
-          className={`w-3 h-3 rounded-full transition-colors ${
+          className={`w-2 h-8 rounded-full transition-colors ${
             active === id ? "bg-white" : "bg-gray-500"
           }`}
         />

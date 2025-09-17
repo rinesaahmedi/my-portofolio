@@ -45,8 +45,8 @@ export default function Contact({ id }) {
           </div>
         </div>
         <footer className="mt-12 text-start text-gray-400 text-sm py-6 border-t border-gray-700">
-          <p>© 2025 Felix Macaspac. All rights reserved.</p>
-          <p>Built with v0.dev by Felix Macaspac</p>
+          <p>© 2025 . All rights reserved.</p>
+          <p>Built with v0.dev by </p>
         </footer>
       </div>
     </Section>
