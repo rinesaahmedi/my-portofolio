@@ -25,7 +25,7 @@ export default function SidebarDots() {
   }, []);
 
   return (
-    <div className="fixed left-6 top-1/2 -translate-y-1/2 flex flex-col gap-4">
+    <div className="hidden md:flex fixed left-6 top-1/2 -translate-y-1/2 flex-col gap-4">
       {sections.map((id) => (
         <a
           key={id}
