@@ -40,7 +40,7 @@ export default function Projects({ id }) {
       <div className="w-full flex flex-col my-10">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-10 sm:mb-20">
           <h2 className="text-2xl sm:text-3xl font-bold">Selected Work</h2>
-          <h5 className="text-gray-300 text-sm sm:text-base mt-2 sm:mt-0">
+          <h5 className="text-gray-700 dark:text-gray-300 text-sm sm:text-base mt-2 sm:mt-0">
             2022–2025
           </h5>
         </div>
@@ -50,15 +50,15 @@ export default function Projects({ id }) {
               key={index}
               className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-16 pb-8 sm:pb-10"
             >
-              <p className="text-lg sm:text-2xl text-gray-300">{work.year}</p>
-              <div className="flex-1 max-w-md">
+              <p className="text-lg sm:text-2xl text-gray-700 dark:text-gray-300">
+                {work.year}
+              </p>
+              <div className="flex-1 max-w-md text-gray-700 dark:text-gray-300">
                 <h4 className="text-base sm:text-xl font-medium">
                   {work.role}
                 </h4>
-                <p className="text-gray-300 text-sm sm:text-base">
-                  {work.title}
-                </p>
-                <p className="text-gray-300 mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed">
+                <p className="text-sm sm:text-base">{work.title}</p>
+                <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-relaxed">
                   {work.description}
                 </p>
               </div>
