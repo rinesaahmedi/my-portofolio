@@ -37,7 +37,7 @@ export default function Projects({ id }) {
   ];
   return (
     <Section id={id}>
-      <div className="max-w-full flex flex-col">
+      <div className="w-full flex flex-col my-10">
         <div className="flex justify-between items-center mb-20">
           <h2 className="text-3xl font-bold">Selected Work</h2>
           <h5 className="text-gray-400">2022-2025</h5>
