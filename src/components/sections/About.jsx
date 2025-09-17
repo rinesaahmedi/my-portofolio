@@ -1,44 +1,49 @@
+"use client";
+
 import Section from "../Section";
+import { useState } from "react";
 
 const thoughts = [
   {
-    date: "Dec 2025",
-    time: "5 min",
-    title: "Building ShareEstate",
-    description:
-      "Exploring how I designed and implemented a booking platform with Node.js, React, and MySQL.",
-    link: "#",
-  },
-  {
-    date: "Nov 2025",
+    date: "2025",
     time: "4 min",
-    title: "MySQL Tips for Beginners",
+    title: "The Beauty of Algorithms",
     description:
-      "Sharing simple tricks I used to optimize queries while working on HRM and other student projects.",
-    link: "#",
+      "I realized how much I love algorithms in university. Solving problems step by step, finding the most efficient solution, and watching numbers and logic fit together like puzzle pieces—it feels magical. Every challenge pushes me to think creatively and logically at the same time.",
   },
   {
-    date: "Oct 2025",
-    time: "6 min",
-    title: "Learning Cloud with AWS",
-    description:
-      "How I built an image upload app using EC2 and S3, and what I learned about deployment.",
-    link: "#",
-  },
-  {
-    date: "Sep 2025",
+    date: "Childhood",
     time: "3 min",
-    title: "Why I Prefer Backend Development",
+    title: "Learning with Enthusiasm",
     description:
-      "Thoughts on why I enjoy building backend systems and solving logic challenges more than UI work.",
-    link: "#",
+      "As a kid, I was energetic and curious, always joining events and organizations. That drive carried over into my studies and projects—I enjoy learning with others and staying actively involved in everything I do.",
+  },
+  {
+    date: "2025",
+    time: "4 min",
+    title: "Backend over Design",
+    description:
+      "I realized I prefer building systems and solving problems behind the scenes rather than focusing on UI design. Working with numbers, logic, and structure excites me far more than colors or fonts. It’s rewarding to see complex logic flow correctly and efficiently in a system I’ve built.",
+  },
+  {
+    date: "2024 Internship",
+    time: "3 min",
+    title: "Kindness and Teamwork",
+    description:
+      "I believe being kind and helpful is as important as technical skills. I like supporting others, solving problems together, and making projects smoother through teamwork and communication.",
   },
 ];
 export default function About({ id }) {
+  const [expanded, setExpanded] = useState({});
+
+  const toggleExpand = (index) => {
+    setExpanded((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
+
   return (
     <Section id={id}>
       <div>
-        <h2 className="text-3xl font-bold mb-10">Recent Thoughts</h2>
+        <h2 className="text-3xl font-bold mb-10">Reflections</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {thoughts.map((thought, index) => (
             <div
@@ -49,6 +54,7 @@ export default function About({ id }) {
                 <span>{thought.date}</span>
                 <span>{thought.time}</span>
               </div>
+<<<<<<< Updated upstream
               <h3 className="text-xl font-semibold mb-2">{thought.title}</h3>
               <p className="text-gray-400 mb-4">{thought.description}</p>
               <a
@@ -57,6 +63,25 @@ export default function About({ id }) {
               >
                 Read more →
               </a>
+=======
+              <h3 className="text-xl font-medium mb-2 group-hover:text-gray-700 dark:group-hover:text-gray-300  transition-colors">
+                {thought.title}
+              </h3>
+              <p className="text-secondary mb-4">
+                {expanded[index]
+                  ? thought.description
+                  : thought.description.slice(0, 120) + "..."}
+              </p>
+              <button
+                onClick={() => toggleExpand(index)}
+                className="text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all"
+              >
+                {expanded[index] ? "Show less" : "Read more"}
+                <span className="inline-block group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
+              </button>
+>>>>>>> Stashed changes
             </div>
           ))}
         </div>
