@@ -40,7 +40,7 @@ export default function Projects({ id }) {
       <div className="w-full flex flex-col my-10">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-10 sm:mb-20">
           <h2 className="text-2xl sm:text-3xl font-bold">Selected Work</h2>
-          <h5 className="text-gray-400 text-sm sm:text-base mt-2 sm:mt-0">
+          <h5 className="text-gray-300 text-sm sm:text-base mt-2 sm:mt-0">
             2022–2025
           </h5>
         </div>
@@ -50,9 +50,7 @@ export default function Projects({ id }) {
               key={index}
               className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-16 pb-8 sm:pb-10"
             >
-              <p className="text-lg sm:text-2xl font-semibold text-gray-400">
-                {work.year}
-              </p>
+              <p className="text-lg sm:text-2xl text-gray-300">{work.year}</p>
               <div className="flex-1 max-w-md">
                 <h4 className="text-base sm:text-xl font-medium">
                   {work.role}
@@ -64,7 +62,7 @@ export default function Projects({ id }) {
                   {work.description}
                 </p>
               </div>
-              <div className="flex flex-wrap md:min-w-xxs lg:min-w-sm sm:flex-nowrap justify-start sm:justify-end gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500 mt-2">
+              <div className="flex flex-wrap md:min-w-xxs lg:min-w-sm sm:flex-nowrap justify-start sm:justify-end gap-2 sm:gap-4 text-xs sm:text-sm mt-2">
                 {work.tech.map((tech, i) => (
                   <span key={i}>{tech}</span>
                 ))}

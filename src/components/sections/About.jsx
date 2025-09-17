@@ -34,6 +34,7 @@ const thoughts = [
     link: "#",
   },
 ];
+
 export default function About({ id }) {
   return (
     <Section id={id}>
@@ -43,19 +44,24 @@ export default function About({ id }) {
           {thoughts.map((thought, index) => (
             <div
               key={index}
-              className="border border-gray-800 rounded-xl p-6 hover:border-gray-600 transition"
+              className="group border border-gray-300 rounded-xl p-6 hover:border-white transition"
             >
-              <div className="flex justify-between text-sm text-gray-400 mb-3">
+              <div className="flex justify-between text-sm text-gray-300 mb-3">
                 <span>{thought.date}</span>
                 <span>{thought.time}</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">{thought.title}</h3>
-              <p className="text-gray-400 mb-4">{thought.description}</p>
+              <h3 className="text-xl font-medium mb-2 text-white group-hover:text-gray-300 transition-colors">
+                {thought.title}
+              </h3>
+              <p className="text-secondary mb-4">{thought.description}</p>
               <a
                 href={thought.link}
-                className="text-sm font-medium hover:underline"
+                className="text-sm font-medium text-white flex items-center gap-1 group-hover:gap-2 transition-all"
               >
-                Read more →
+                Read more
+                <span className="inline-block group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
               </a>
             </div>
           ))}
