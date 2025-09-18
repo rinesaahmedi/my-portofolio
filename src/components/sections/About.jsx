@@ -55,15 +55,6 @@ export default function About({ id }) {
                 <span>{thought.date}</span>
                 <span>{thought.time}</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">{thought.title}</h3>
-              <p className="text-gray-400 mb-4">{thought.description}</p>
-              <a
-                href={thought.link}
-                className="text-sm font-medium text-white flex items-center gap-1 group-hover:gap-2 transition-all"
-              >
-                Read more →
-              </a>
-              =======
               <h3 className="text-xl font-medium mb-2 group-hover:text-gray-700 dark:group-hover:text-gray-300  transition-colors">
                 {thought.title}
               </h3>

@@ -1,4 +1,5 @@
 import Section from "../Section";
+import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
 
 export default function Contact({ id }) {
@@ -39,7 +40,7 @@ export default function Contact({ id }) {
                 <p className="text-gray-300">@rinesaahmedi</p>
               </a>
               <a
-                href="https://www.linkedin.com/in/rinesaahmedi"
+                href="https://www.linkedin.com/in/rinesa-ahmedi-225249301/"
                 target="_blank"
                 className="p-4 border border-gray-700 rounded-lg hover:border-gray-300"
               >
@@ -49,9 +50,7 @@ export default function Contact({ id }) {
             </div>
           </div>
         </div>
-        <footer className="mt-auto text-start text-gray-300 text-xs sm:text-sm py-6 border-t border-gray-700">
-          <p>© 2025 Rinesa Ahmedi. All rights reserved.</p>
-        </footer>
+        <Footer></Footer>
       </div>
     </Section>
   );

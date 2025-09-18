@@ -17,7 +17,7 @@ export default function Hero({ id }) {
           </p>
           <h1 className="text-3xl sm:text-5xl font-bold mb-3">Rinesa Ahmedi</h1>
           <h2 className="text-base sm:text-xl text-gray-300 mb-6 leading-relaxed">
-            Backend Developer building reliable systems with Node.js & SQL
+            Backend Developer delivering reliable and scalable systems
           </h2>
         </div>
 
