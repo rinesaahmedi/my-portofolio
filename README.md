@@ -40,7 +40,7 @@ It showcases my projects, skills, and reflections about my journey in computer s
 
 ## 📸 Preview
 
-![Portfolio Screenshot](./screenshot.png) <!-- Optional: add screenshot -->
+![Portfolio Screenshot](./Screenshot.png)
 
 ---
 
