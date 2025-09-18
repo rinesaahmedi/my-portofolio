@@ -40,7 +40,7 @@ export default function Contact({ id }) {
                 <p>@rinesaahmedi</p>
               </a>
               <a
-                href="https://www.linkedin.com/in/rinesaahmedi"
+                href="www.linkedin.com/in/rinesa-ahmedi-225249301"
                 target="_blank"
                 className="p-4 border border-gray-300 hover:border-gray-700 dark:border-gray-700 rounded-lg dark:hover:border-gray-300"
               >
